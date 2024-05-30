@@ -9,12 +9,14 @@ fetch('data.json')
 })
 .then((countries)=>{
     let display = countries.map((country)=>{
-        return `<div class="card">
-        <img src="" alt="" srcset="">
-        <p>Population : </p>
-        <p>Region:</p>
-        <p>Capital:</p>
-    </div>`
+        return `<a href="./detailedPage.html?area=${country.area}">
+        <div class="card">
+            <img src="" alt="" srcset="">
+            <p>Population :${country.population} </p>
+            <p>Region:${country.region}</p>
+            <p>Capital:${country.capital}</p>
+        </div>
+        </a>`
     })
     countriesWrapper.innerHTML = display
 })
