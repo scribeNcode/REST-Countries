@@ -8,10 +8,10 @@ fetch('data.json')
     return res.json()
 })
 .then((countries)=>{
-    let display = countries.map((country)=>{
-        return `<a href="./detailedPage.html?area=${country.area}">
+    let display = countries.map((country, index)=>{
+        return `<a href="./detailedPage.html?index=${index}">
         <div class="card">
-            <img src="" alt="" srcset="">
+            <img src="${country.flags.svg}" alt="" srcset="">
             <p>Population :${country.population} </p>
             <p>Region:${country.region}</p>
             <p>Capital:${country.capital}</p>
