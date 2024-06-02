@@ -78,7 +78,8 @@ main{
 
 .countries-section{
     width: 70%;
-    background: red;
+    margin-top: 5rem;
+    /* background: red; */
 }
 
 .other-countries{
@@ -87,10 +88,36 @@ main{
     padding: 1rem;
 }
 
+
 .other-countries ul{
     list-style: none;
 }
 
 .other-countries ul li{
     margin-bottom: 0.3rem;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 1.5rem; */
+}
+
+
+.card{
+    margin-bottom: 1.5rem;
+    background-color: white;
+    height: 14rem;
+}
+
+
+.text-div{
+    margin: 1rem ;
+}
+
+.selectarea{
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
 }

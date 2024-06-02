@@ -16,7 +16,7 @@ fetch('data.json')
 .then((data)=>{
     let detailed = data[index]
     console.log(detailed)
-    let display =  `        <img src="${detailed.flags.svg}" alt="" srcset="">
+    let display =  ` <img src="${detailed.flags.svg}" alt="" srcset="">
     <h1>${detailed.name}</h1>
     <p>Native name:${detailed.nativeName}</p>
     <p>Population:${detailed.population}</p>

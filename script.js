@@ -12,11 +12,13 @@ fetch('data.json')
         return `<a href="./detailedPage.html?index=${index}">
         <div class="card">
             <img src="${country.flags.svg}" alt="" srcset="">
+            <div class="text-div">
             <p>Population :${country.population} </p>
             <p>Region:${country.region}</p>
             <p>Capital:${country.capital}</p>
+            </div>
         </div>
         </a>`
     })
-    countriesWrapper.innerHTML = display
+    countriesWrapper.innerHTML = display.join(' ')
 })
